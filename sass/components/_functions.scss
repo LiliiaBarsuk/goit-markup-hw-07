@@ -1,0 +1,38 @@
+.section__function {
+  padding-top: 0;
+}
+
+.function {
+  display: inline-flex;
+}
+
+.function__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.function__image {
+  display: block;
+}
+
+.function__card {
+  position: relative;
+}
+
+.function__description {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  display: block;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  text-align: center;
+
+  color: $functionTextColor;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.14;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}

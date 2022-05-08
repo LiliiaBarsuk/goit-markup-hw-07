@@ -1,0 +1,134 @@
+.filter__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter__button {
+  border: none;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 6px 22px;
+  min-width: 73px;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $secondaryTextColor;
+
+  background-color: #f5f4fa;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: $accentColor;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project__link {
+  display: block;
+  text-decoration: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow:
+      0px 1px 1px rgba(0, 0, 0, 0.12),
+      0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+}
+
+.grid__item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+
+}
+
+.project__image {
+  display: block;
+}
+
+.project__description {
+  padding: 20px 24px;
+  border-left-color: $cardBorderColor;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-bottom-color: $cardBorderColor;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-right-color: $cardBorderColor;
+  border-right-width: 1px;
+  border-right-style: solid;
+}
+
+.project__name {
+  margin-bottom: 4px;
+
+  color: $secondaryTextColor;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project__type {
+  font-size: 16px;
+  line-height: 1.88;
+  color: $primaryTextColor;
+}
+
+.project__detail {
+  position: relative;
+  overflow: hidden;
+
+}
+
+.project__text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+
+  font-size: 18px;
+  line-height: 1.55;
+  color: #FFFFFF;
+
+  background-color: rgba(33, 150, 243, 0.9);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .project__link:hover &,
+  .project__link:focus & {
+    transform: translateY(-100%);
+  }
+
+  
+}
+
