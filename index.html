@@ -19,36 +19,38 @@
     <!--Шапка сайта -->
     <header class="header">
       <div class="container header__container">
-        <nav class="site-nav">
-          <a href="./index.html" class="logo header__logo"
-            ><span class="logo--accent">Web</span>Studio</a
-          >
-          <ul class="site-nav__list">
-            <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a>
+        <a href="./index.html" class="logo header__logo"
+          ><span class="logo--accent">Web</span>Studio</a
+        >
+        <div class="menu">
+          <nav class="site-nav">
+            <ul class="site-nav__list">
+              <li class="site-nav__item">
+                <a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+              </li>
+              <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+            </ul>
+          </nav>
+          <ul class="contacts">
+            <li class="contacts__item">
+              <a href="mailto:info@devstudio.com" class="contacts__link">
+                <svg class="contacts__icon" width="16" height="10">
+                  <use href="./img/icons.svg#icon-envelope"></use></svg
+                >info@devstudio.com</a
+              >
             </li>
-            <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+            <li class="contacts__item">
+              <a href="telto:+380961111111" class="contacts__link">
+                <svg class="contacts__icon" width="10" height="16">
+                  <use href="./img/icons.svg#icon-smartphone"></use></svg
+                >+38 096 111 11 11</a
+              >
             </li>
-            <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
           </ul>
-        </nav>
-        <ul class="contacts">
-          <li class="contacts__item">
-            <a href="mailto:info@devstudio.com" class="contacts__link"
-              ><svg class="contacts__icon" width="16" height="10">
-                <use href="./img/icons.svg#icon-envelope"></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts__item">
-            <a href="telto:+380961111111" class="contacts__link"
-              ><svg class="contacts__icon" width="10" height="16">
-                <use href="./img/icons.svg#icon-smartphone"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -58,7 +60,7 @@
         <button type="button" class="button button--main" data-modal-open>Заказать услугу</button>
       </section>
       <!--Секция Наши преимущества -->
-      <section class="section">
+      <section class="section section-features">
         <div class="container">
           <h2 class="section__title section__title--hidden">Наши преимущества</h2>
           <ul class="features">
@@ -145,7 +147,7 @@
               <img
                 src="./img/img1.jpg"
                 alt="фото Игоря Демьяненко"
-                width="270"
+                width="100%"
                 class="team__image"
               />
               <div class="team__description">
@@ -184,7 +186,7 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./img/img2.jpg" alt="Фото Ольги Репиной" width="270" class="team__image" />
+              <img src="./img/img2.jpg" alt="Фото Ольги Репиной" width="100%" class="team__image" />
               <div class="team__description">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__proffesion">Frontend Developer</p>
@@ -224,7 +226,7 @@
               <img
                 src="./img/img3.jpg"
                 alt="Фото Николая Тарасова"
-                width="270"
+                width="100%"
                 class="team__image"
               />
               <div class="team__description">
@@ -266,7 +268,7 @@
               <img
                 src="./img/img4.jpg"
                 alt="Фото Михаила Ермакова"
-                width="270"
+                width="100%"
                 class="team__image"
               />
               <div class="team__description">
@@ -361,11 +363,11 @@
     <!--Footer-->
     <footer class="footer">
       <div class="container container__footer">
+        <!-- Контакты -->
         <div class="box addres__box">
           <a href="./index.html" class="logo footer__logo"
             ><span class="logo--accent">Web</span>Studio</a
           >
-          <!-- Контакты -->
           <address class="address">
             <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
             <ul class="contacts contacts--dark">
@@ -415,7 +417,7 @@
         </div>
         <div class="box subscription__box">
           <h2 class="footer__title">Подпишитесь на рассылку</h2>
-          <form action="#" name="subscription" autocomplete="on">
+          <form action="#" name="subscription" autocomplete="on" class="form subscription__form">
             <label>
               <input type="email" name="email" class="subscription__input" placeholder="Email" />
             </label>
@@ -484,7 +486,6 @@
             Соглашаюсь с рассылкой и принимаю
             <a href="" class="agreement__link">Условия договора</a>
           </label>
-
           <button type="submit" class="button button__submit">Отправить</button>
         </form>
       </div>
