@@ -1,5 +1,5 @@
 .subscription__box {
-@media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-left: 93px;
   }
 }
@@ -32,21 +32,19 @@
   outline: none;
 
   @media screen and (min-width: 1200px) {
-      width: 358px;
-      margin-right: 12px;
-    }
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 
 .subscription__button {
   padding: 10px 29px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
-margin-left: auto;
-margin-right: auto;
-
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .subscription__icon {
-  margin-left: 10px;
-  
+  margin-left: 10px;  
 }

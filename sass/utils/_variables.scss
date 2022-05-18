@@ -40,6 +40,7 @@ body {
   color: $primaryTextColor;
 }
 
+
 .section__title--hidden {
   position: absolute;
   width: 1px;
@@ -51,6 +52,16 @@ body {
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.no-scroll {
   overflow: hidden;
 }
 
@@ -72,11 +83,11 @@ p {
 }
 
 .container {
-  width: 480px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: auto;
+  // outline: auto;
 
   @media screen and (min-width: 480px) {
       width: 480px;

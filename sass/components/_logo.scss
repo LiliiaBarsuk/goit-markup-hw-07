@@ -1,21 +1,21 @@
 .header__logo {
-  
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16;
   text-decoration: none;
   color: $logoBlack;
-@media screen and (min-width: 1200px) {
- 
-    margin-right: 90px;
 
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
     font-size: 26px;
     line-height: 1.16;
-  
-}}
-
-
+  }
+}
 
 .logo--accent {
   color: $accentColor;
