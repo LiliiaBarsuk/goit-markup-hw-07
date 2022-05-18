@@ -1,49 +1,16 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: $footerBackgroundColor; 
+  background-color: $footerBackgroundColor;
 }
 
 .container__footer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-  }
-
-  @media screen and (min-width: 1200px) {
-    flex-direction: row;
-    align-items: flex-start;
-    
-  }
+  align-items: baseline;
 }
-
-.box {
-  text-align: center;
-
-  @media screen and (max-width: 1199px) {
-    &:not(:last-child) {
-      margin-bottom: 60px;
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    text-align: left;
-  }
-}
-
 
 .addres__box {
-  @media screen and (min-width: 1200px) {
-    &:not(:last-child) {
-      margin-right: 70px;
-    }
-  }
+  margin-right: 70px;
 }
 
 .footer__logo {
@@ -53,9 +20,9 @@
   color: $footerWhiteColor;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 1.16;
-  text-decoration: none; 
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
 }
 
 .address__text {
@@ -83,6 +50,7 @@
   &:focus {
     color: $accentColor;
   }
+
 }
 
 .contacts__item--dark:not(:last-child) {
@@ -92,7 +60,7 @@
 .footer__title {
   font-size: 14px;
   margin-bottom: 20px;
-  line-height: 1.14;
+  line-height: 1, 14;
   text-transform: uppercase;
-  color: $footerWhiteColor; 
+  color: $footerWhiteColor;
 }

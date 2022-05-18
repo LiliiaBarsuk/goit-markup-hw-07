@@ -15,104 +15,40 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body class=".body">
+  <body>
     <!--Шапка сайта -->
     <header class="header">
       <div class="container header__container">
-        <a href="./index.html" class="logo header__logo">
-          <span class="logo--accent">Web</span>Studio
-        </a>
-       
-        <div class="menu"> 
-          <nav class="site-nav">
-            <ul class="site-nav__list">
-              <li class="site-nav__item">
-                <a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a>
-              </li>
-              <li class="site-nav__item">
-                <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
-              </li>
-              <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
-            </ul>
-          </nav>
-          
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <a href="mailto:info@devstudio.com" class="contacts__link">
-                <svg class="contacts__icon--mail">
-                  <use href="./img/icons.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
+        <nav class="site-nav">
+          <a href="./index.html" class="logo header__logo"
+            ><span class="logo--accent">Web</span>Studio</a
+          >
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a>
             </li>
-            <li class="contacts__item">
-              <a href="telto:+380961111111" class="contacts__link">
-                <svg class="contacts__icon--phone">
-                  <use href="./img/icons.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
             </li>
+            <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
           </ul>
-        
-        </div> 
-
-        <!-- Mob menu -->
-
-        <button type="button" class="menu-open-btn">
-          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-            <use class="icon-open" href="./img/icons.svg#icon-open-menu"></use>
-          </svg>
-        </button>
-        <div class="mob-menu is-hidden">
-          <div class="mob-menu__container">
-            <div class="mob-menu-top">
-              <button type="button" class="menu-close-btn">
-                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-                  <use class="icon-close" href="./img/icons.svg#icon-close-menu"></use>
-                </svg>
-              </button>
-              <ul class="mob-menu__list">
-                <li class="mob-menu__item">
-                  <a href="" class="mob-menu__link mob-menu__link--current">Студия</a>
-                </li>
-                <li class="mob-menu__item"><a href="" class="mob-menu__link">Портфолио</a></li>
-                <li class="mob-menu__item"><a href="" class="mob-menu__link">Контакты</a></li>
-              </ul>
-            </div>
-            <div class="mob-menu-bottom">
-              <ul class="mob-menu-contacts__list">
-                <li class="mob-menu-contacts__item">
-                  <a href="mailto:info@devstudio.com" class="mob-menu-contacts__link--accent">
-                    info@devstudio.com
-                  </a>
-                </li>
-                <li class="mob-menu-contacts__item">
-                  <a href="telto:+380961111111" class="mob-menu-contacts__link--grey">
-                    +38 096 111 11 11
-                  </a>
-                </li>
-              </ul>
-
-              <ul class="mob-menu-soc__list">
-                <li class="mob-menu-soc__item">
-                  <a class="mob-menu-soc__link" href="">Instagram</a>
-                </li>
-                <li class="mob-menu-soc__item">
-                  <a class="mob-menu-soc__link" href="">Twitter</a>
-                </li>
-                <li class="mob-menu-soc__item">
-                  <a class="mob-menu-soc__link" href="">Facebook</a>
-                </li>
-                <li class="mob-menu-soc__item">
-                  <a class="mob-menu-soc__link" href="">LinkedIn</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div> 
-
-        </div>  
+        </nav>
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__link"
+              ><svg class="contacts__icon" width="16" height="10">
+                <use href="./img/icons.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a href="telto:+380961111111" class="contacts__link"
+              ><svg class="contacts__icon" width="10" height="16">
+                <use href="./img/icons.svg#icon-smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
     <main>
@@ -122,7 +58,7 @@
         <button type="button" class="button button--main" data-modal-open>Заказать услугу</button>
       </section>
       <!--Секция Наши преимущества -->
-      <section class="section section-features">
+      <section class="section">
         <div class="container">
           <h2 class="section__title section__title--hidden">Наши преимущества</h2>
           <ul class="features">
@@ -162,10 +98,9 @@
               <a href="">
                 <div class="function__card">
                   <img
-                    srcset="./img/box1.jpg 1x, ./img/box1-2x.jpg 2x"
                     src="./img/box1.jpg"
                     alt="Написание кода"
-                    width="100%"
+                    width="370"
                     class="function__image"
                   />
                   <p class="function__description">Десктопные приложения</p>
@@ -176,10 +111,9 @@
               <a href="">
                 <div class="function__card">
                   <img
-                    srcset="./img/box2.jpg 1x, ./img/box2-2x.jpg 2x"
                     src="./img/box2.jpg"
                     alt="Работа над мобильной версией сайта"
-                    width="100%"
+                    width="370"
                     class="function__image"
                   />
                   <p class="function__description">Мобильные приложения</p>
@@ -190,10 +124,9 @@
               <a href="">
                 <div class="function__card">
                   <img
-                    srcset="./img/box3.jpg 1x, ./img/box3-2x.jpg 2x"
                     src="./img/box3.jpg"
                     alt="Выбор цветовой гаммы"
-                    width="100%"
+                    width="370"
                     class="function__image"
                   />
                   <p class="function__description">Дизайнерские решения</p>
@@ -210,10 +143,9 @@
           <ul class="team">
             <li class="team__item">
               <img
-                srcset="./img/img1.jpg 1x, ./img/img1-2x.jpg 2x"
                 src="./img/img1.jpg"
                 alt="фото Игоря Демьяненко"
-                width="100%"
+                width="270"
                 class="team__image"
               />
               <div class="team__description">
@@ -252,13 +184,7 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                srcset="./img/img2.jpg 1x ./img/img2-2x.jpg 2x"
-                src="./img/img2.jpg"
-                alt="Фото Ольги Репиной"
-                width="100%"
-                class="team__image"
-              />
+              <img src="./img/img2.jpg" alt="Фото Ольги Репиной" width="270" class="team__image" />
               <div class="team__description">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__proffesion">Frontend Developer</p>
@@ -296,10 +222,9 @@
             </li>
             <li class="team__item">
               <img
-                srcset="./img/img3.jpg 1x ./img/img3-2x.jpg 2x"
                 src="./img/img3.jpg"
                 alt="Фото Николая Тарасова"
-                width="100%"
+                width="270"
                 class="team__image"
               />
               <div class="team__description">
@@ -339,10 +264,9 @@
             </li>
             <li class="team__item">
               <img
-                srcset="./img/img4.jpg 1x ./img/img4-2x.jpg 2x"
                 src="./img/img4.jpg"
                 alt="Фото Михаила Ермакова"
-                width="100%"
+                width="270"
                 class="team__image"
               />
               <div class="team__description">
@@ -437,18 +361,18 @@
     <!--Footer-->
     <footer class="footer">
       <div class="container container__footer">
-        <!-- Контакты -->
         <div class="box addres__box">
-          <a href="./index.html" class="logo footer__logo">
-            <span class="logo--accent">Web</span>Studio
-          </a>
+          <a href="./index.html" class="logo footer__logo"
+            ><span class="logo--accent">Web</span>Studio</a
+          >
+          <!-- Контакты -->
           <address class="address">
             <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
             <ul class="contacts contacts--dark">
               <li class="contacts__item contacts__item--dark">
-                <a href="mailto:info@devstudio.com" class="contacts__link--dark">
-                  info@devstudio.com
-                </a>
+                <a href="mailto:info@devstudio.com" class="contacts__link--dark"
+                  >info@devstudio.com</a
+                >
               </li>
               <li class="contacts__item contacts__item--dark">
                 <a href="telto:+380961111111" class="contacts__link--dark">+38 096 111 11 11</a>
@@ -491,7 +415,7 @@
         </div>
         <div class="box subscription__box">
           <h2 class="footer__title">Подпишитесь на рассылку</h2>
-          <form action="#" name="subscription" autocomplete="on" class="form subscription__form">
+          <form action="#" name="subscription" autocomplete="on">
             <label>
               <input type="email" name="email" class="subscription__input" placeholder="Email" />
             </label>
@@ -557,14 +481,15 @@
             <svg width="16" height="15" class="agreement__icon">
               <use href="./img/icons.svg#icon-consent"></use>
             </svg>
-            Соглашаюсь с рассылкой и принимаю &nbsp
+            Соглашаюсь с рассылкой и принимаю
             <a href="" class="agreement__link">Условия договора</a>
           </label>
+
           <button type="submit" class="button button__submit">Отправить</button>
         </form>
       </div>
     </div>
-    <script src="./js/mobile-menu.js"></script>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>

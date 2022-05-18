@@ -40,7 +40,6 @@ body {
   color: $primaryTextColor;
 }
 
-
 .section__title--hidden {
   position: absolute;
   width: 1px;
@@ -52,16 +51,6 @@ body {
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-}
-
-.no-scroll {
   overflow: hidden;
 }
 
@@ -83,32 +72,15 @@ p {
 }
 
 .container {
-  width: 100%;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  // outline: auto;
-
-  @media screen and (min-width: 480px) {
-      width: 480px;
-    }
-  
-    @media screen and (min-width: 768px) {
-      width: 768px;
-    }
-  
-    @media screen and (min-width: 1200px) {
-      width: 1200px;
-    }
 }
 
 .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;  
-  }
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .button {
@@ -134,13 +106,8 @@ p {
   margin-bottom: 50px;
 
   font-weight: 700;
-  font-size: 28px;
+  font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: $titleColor;
-  @media screen and (min-width: 1200px) {
-    font-size: 36px;
-    line-height: 1.16;
-  }
 }
-

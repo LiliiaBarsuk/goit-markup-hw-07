@@ -1,24 +1,13 @@
 .subscription__box {
-  @media screen and (min-width: 1200px) {
-    margin-left: 93px;
-  }
-}
-
-.subscription__form {
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-  }
+  margin-left: 93px;
 }
 
 .subscription__input {
-  width: 450px;
+  width: 358px;
   height: 50px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
-  margin-bottom: 20px;
 
   font-size: 16px;
   line-height: 1.25;
@@ -30,21 +19,14 @@
   border-radius: 4px;
   background-color: $footerBackgroundColor;
   outline: none;
-
-  @media screen and (min-width: 1200px) {
-    width: 358px;
-    margin-right: 12px;
-  }
 }
 
 .subscription__button {
   padding: 10px 29px;
+  margin-left: 12px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .subscription__icon {
-  margin-left: 10px;  
+  margin-left: 10px;
 }
